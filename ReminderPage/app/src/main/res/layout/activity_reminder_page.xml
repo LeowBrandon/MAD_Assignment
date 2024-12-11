@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReminderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Icons for User Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <!-- Time Picker Above Icons -->
+        <TimePicker
+            android:id="@+id/time_picker_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner" />
+
+        <!-- Icons for User Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icon_check_tyre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/check_tyre_icon"
+                android:src="@drawable/check_tyre" />
+
+            <ImageView
+                android:id="@+id/icon_check_brake"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/check_brake_icon"
+                android:src="@drawable/check_brake" />
+
+            <ImageView
+                android:id="@+id/icon_change_accessories"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/change_accessories_icon"
+                android:src="@drawable/change_accessories" />
+        </LinearLayout>
+
+        <!-- Description Bar -->
+        <TextView
+            android:id="@+id/description_text"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:autoText="false"
+            android:background="#FFFFFF"
+            android:text="Description"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <!-- Buttons for Setting Reminder -->
+        <Button
+            android:id="@+id/set_reminder_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SET REMINDER"/>
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DELETE"/>
+
+        <!-- Time Picker Below Buttons -->
+        <TimePicker
+            android:id="@+id/time_picker_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"
+            android:visibility="invisible"/>
+
+        <!-- RecyclerView to display reminders -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reminder_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

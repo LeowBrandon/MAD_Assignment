@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GrpAsg</string>
+    <string name="menu_history">History</string>
+    <string name="menu_settings">Settings</string>
+    <string name="check_tyre_icon">CHECK TYRE</string>
+    <string name="check_brake_icon">CHECK BRAKE</string>
+    <string name="change_accessories_icon">CHANGE ACCESSORIES</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android Practical 1</string>
+    <string name="sub_stat">Statistics</string>
+    <string name="sub_data">Data Structure</string>
+    <string name="sub_prog">Programming Concepts</string>
+    <string name="sub_aa">Algorithm &amp; Analysis</string>
+    <string name="sub_graphics">Computer Graphics</string>
+    <string name="sub_software">Software Engineering</string>
+</resources>
