@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">Reminder Page</string>
-    <string name="check_tyre_icon">CHECK TYRE</string>
-    <string name="check_brake_icon">CHECK BRAKE</string>
-    <string name="change_accessories_icon">CHANGE ACCESSORIES</string>
-</resources>
